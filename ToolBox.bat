@@ -60,8 +60,8 @@ echo ...........................................................................
 echo :             NETWORK TOOLS           :             PINGING TOOLS             :
 echo ..............................................................................:
 echo :                                     :                                       :
-echo :  1- Get stored network details      :   6- Ping an IP adress                :
-echo :  2- IP configuration                :   7- Trace route to a IP adress       :
+echo :  1- Get stored network details      :  6- Ping an IP adress                 :
+echo :  2- IP configuration                :  7- Trace route to a IP adress        :
 echo :  3- Website IP extractor            :                                       :
 echo :  4- DNS flush                       :                                       :
 echo :  5- Remote shutdown                 :                                       : 
@@ -139,7 +139,7 @@ pause
 cls
 echo.
 echo Where will the .txt be saved?
-echo Ex:(C:\Users\Utilizador\Desktop\)
+echo Ex:(C:\Users\UserName\Desktop\)
 Set /p caminho="Caminho: "
 cd %caminho%
 
@@ -168,8 +168,8 @@ echo :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 NETSH WLAN SHOW PROFILE 
 echo :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 echo.
-echo To obtain the details of the desired network insert its name 
-echo between quotes like the following example: "network_name".
+echo To obtain the details of the desired network insert its SSID 
+echo inbetween quotes like the following example: "network_name".
 echo.
 Set /p passescolha= "Select the network: "
 echo. 
@@ -214,8 +214,8 @@ echo . ###. ###:: ########: ########::. ######::'####:::: ##:::: ########::::'##
 echo :...::...:::........::........::::......:::....:::::..:::::........:::::....::..:::::::::
 echo.
 echo :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-echo Write the website name:
-Set /p escolhaweb="Select: "
+echo Insert the website URL:
+Set /p escolhaweb="URL: "
 cls
 echo :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 echo Website ip adress: %escolhaweb% 
@@ -229,7 +229,7 @@ goto base
 :pingstart
 cls
 echo Write the ip adress to ping:
-Set /p escolhaping="Select: "
+Set /p escolhaping="IP: "
 cls
 echo :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 echo Website ip adress: %escolhaweb% 
